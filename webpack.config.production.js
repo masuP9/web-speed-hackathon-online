@@ -18,6 +18,10 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.jsx'],
+    alias: {
+      react: 'preact/compat',
+      'react-dom': 'preact/compat',
+    },
   },
   plugins: [
     new webpack.DefinePlugin({
@@ -50,7 +54,7 @@ module.exports = {
       threshold: 10240,
       minRatio: 0.8,
     }),
-    // new BundleAnalyzerPlugin(),
+    new BundleAnalyzerPlugin(),
   ],
 
   module: {

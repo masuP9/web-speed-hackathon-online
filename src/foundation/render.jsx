@@ -1,3 +1,4 @@
+import { h, render, Component } from 'preact';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
